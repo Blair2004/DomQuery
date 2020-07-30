@@ -16,6 +16,8 @@ $ composer require rct567/dom-query
 ### Read attributes and properties:
 
 ``` php
+use Rct567\DomQuery\DomQuery;
+
 $dom = new DomQuery('<div><h1 class="title">Hello</h1></div>');
 
 echo $dom->find('h1')->text(); // output: Hello
